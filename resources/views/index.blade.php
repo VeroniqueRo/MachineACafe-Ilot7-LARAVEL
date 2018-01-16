@@ -79,10 +79,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Liste des Recettes
+                    Café "La Pause s'impose"
                 </div>
 
                 <div class="links">
+                    <a href="index">Home</a>
+                    <a href="selectDrink">Selection des boissons</a>
                     <a href="recettes">Liste des Recettes</a>
                     <a href="ventes">Liste des Ventes</a>
                 </div>
