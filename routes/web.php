@@ -11,11 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('index', function () {
+    return view('index');
 });
 
-Route::get('/recettes', function () {
-    return view('recettes');
+Route::get('/selectDrink', function () {
+    return view('selectDrink');
 });
-
