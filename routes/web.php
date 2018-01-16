@@ -19,3 +19,6 @@ Route::get('/recettes', function () {
     return view('recettes');
 });
 
+Route::get('/ventes',function(){
+	return view('Ventes');
+});
