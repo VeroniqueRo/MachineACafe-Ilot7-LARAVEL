@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Liste de Ventes</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -79,15 +79,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Café "La Pause s'impose"
+                    Liste des Ventes
                 </div>
 
                 <div class="links">
+                    <a href = "/">Machineacafe</a>
                     <a href="recettes">Liste des Recettes</a>
-                    <a href="ingredients">Liste des Ingrédients</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
         </div>
