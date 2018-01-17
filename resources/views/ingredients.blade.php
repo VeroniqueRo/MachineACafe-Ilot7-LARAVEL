@@ -88,9 +88,11 @@
                     <a href="recettes">Liste des Recettes</a>
                     <a href="ingredients">Liste des Ingrédients</a>
                     <a href="ventes">Liste des Ventes</a>
+
                 </div>
+
                 </div>
-            </div>
         </div>
+    </div>
     </body>
 </html>

@@ -563,7 +563,8 @@
 #0 C:\\Users\\thomas.francese\\Documents\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths('recettes', Array)
 #1 C:\\Users\\thomas.francese\\Documents\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Factory.php(128): Illuminate\\View\\FileViewFinder->find('recettes')
 #2 C:\\Users\\thomas.francese\\Documents\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(971): Illuminate\\View\\Factory->make('recettes', Array, Array)
-#3 C:\\Users\\thomas.francese\\Documents\\MachineACafe-Ilot7-LARAVEL\outes\\web.php(19): view('recettes')
+#3 C:\\Users\\thomas.francese\\Documents\\MachineACafe-Ilot7-LARAVEL\
+outes\\web.php(19): view('recettes')
 #4 C:\\Users\\thomas.francese\\Documents\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(198): Illuminate\\Routing\\Router->{closure}()
 #5 C:\\Users\\thomas.francese\\Documents\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(172): Illuminate\\Routing\\Route->runCallable()
 #6 C:\\Users\\thomas.francese\\Documents\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Route->run()
@@ -618,6 +619,7 @@
 #55 C:\\Users\\thomas.francese\\Documents\\MachineACafe-Ilot7-LARAVEL\\server.php(21): require_once('C:\\\\Users\\\\thomas...')
 #56 {main}
 "} 
+<<<<<<< HEAD
 [2018-01-16 15:50:05] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
 [stacktrace]
 #0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1035): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
@@ -1669,6 +1671,24 @@
 #17 {main}
 "} 
 [2018-01-16 15:58:02] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+=======
+[2018-01-16 15:51:00] production.ERROR: Command "server" is not defined.
+
+Did you mean this?
+    serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"server\" is not defined.
+
+Did you mean this?
+    serve at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\symfony\\console\\Application.php:610)
+[stacktrace]
+#0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\symfony\\console\\Application.php(221): Symfony\\Component\\Console\\Application->find('server')
+#1 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(121): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2018-01-16 15:51:24] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+>>>>>>> c0a60012d14435b81baedde85462611398e4efb2
 [stacktrace]
 #0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1035): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
 #1 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap(NULL, Object(Closure))
@@ -1717,7 +1737,11 @@
 #44 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\server.php(21): require_once('C:\\\\wamp64\\\\www\\\\M...')
 #45 {main}
 "} 
+<<<<<<< HEAD
 [2018-01-16 15:58:02] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+=======
+[2018-01-16 15:51:25] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+>>>>>>> c0a60012d14435b81baedde85462611398e4efb2
 [stacktrace]
 #0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1035): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
 #1 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap(NULL, Object(Closure))
@@ -1738,7 +1762,11 @@
 #16 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\server.php(21): require_once('C:\\\\wamp64\\\\www\\\\M...')
 #17 {main}
 "} 
+<<<<<<< HEAD
 [2018-01-16 15:58:08] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+=======
+[2018-01-16 15:51:33] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+>>>>>>> c0a60012d14435b81baedde85462611398e4efb2
 [stacktrace]
 #0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1035): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
 #1 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap(NULL, Object(Closure))
@@ -1787,7 +1815,11 @@
 #44 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\server.php(21): require_once('C:\\\\wamp64\\\\www\\\\M...')
 #45 {main}
 "} 
+<<<<<<< HEAD
 [2018-01-16 15:58:08] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+=======
+[2018-01-16 15:51:33] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+>>>>>>> c0a60012d14435b81baedde85462611398e4efb2
 [stacktrace]
 #0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1035): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
 #1 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap(NULL, Object(Closure))
@@ -1808,7 +1840,11 @@
 #16 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\server.php(21): require_once('C:\\\\wamp64\\\\www\\\\M...')
 #17 {main}
 "} 
+<<<<<<< HEAD
 [2018-01-16 15:58:08] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+=======
+[2018-01-16 15:52:38] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+>>>>>>> c0a60012d14435b81baedde85462611398e4efb2
 [stacktrace]
 #0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1035): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
 #1 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap(NULL, Object(Closure))
@@ -1857,7 +1893,11 @@
 #44 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\server.php(21): require_once('C:\\\\wamp64\\\\www\\\\M...')
 #45 {main}
 "} 
+<<<<<<< HEAD
 [2018-01-16 15:58:08] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+=======
+[2018-01-16 15:52:38] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+>>>>>>> c0a60012d14435b81baedde85462611398e4efb2
 [stacktrace]
 #0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1035): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
 #1 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap(NULL, Object(Closure))
@@ -1878,7 +1918,11 @@
 #16 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\server.php(21): require_once('C:\\\\wamp64\\\\www\\\\M...')
 #17 {main}
 "} 
+<<<<<<< HEAD
 [2018-01-16 15:58:17] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+=======
+[2018-01-16 15:58:13] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+>>>>>>> c0a60012d14435b81baedde85462611398e4efb2
 [stacktrace]
 #0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1035): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
 #1 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap(NULL, Object(Closure))
@@ -1927,7 +1971,11 @@
 #44 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\server.php(21): require_once('C:\\\\wamp64\\\\www\\\\M...')
 #45 {main}
 "} 
+
 [2018-01-16 15:58:17] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+
+[2018-01-16 15:58:13] production.ERROR: No application encryption key has been specified. {"exception":"[object] (RuntimeException(code: 0): No application encryption key has been specified. at C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php:42)
+
 [stacktrace]
 #0 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(1035): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}(NULL)
 #1 C:\\wamp64\\www\\MachineACafe-Ilot7-LARAVEL\\vendor\\laravel\\framework\\src\\Illuminate\\Encryption\\EncryptionServiceProvider.php(46): tap(NULL, Object(Closure))

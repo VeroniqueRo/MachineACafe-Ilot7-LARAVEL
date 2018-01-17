@@ -89,7 +89,7 @@
                     <a href="ingredients">Liste des Ingrédients</a>
                     <a href="ventes">Liste des Ventes</a>
                 </div>
-                </div>
+                
             </div>
         </div>
     </body>

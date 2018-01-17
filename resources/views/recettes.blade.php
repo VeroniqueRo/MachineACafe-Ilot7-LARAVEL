@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="<?php echo e(app()->getLocale()); ?>">
+<html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -66,29 +66,28 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            <?php if(Route::has('login')): ?>
+            @if (Route::has('login'))
                 <div class="top-right links">
-                    <?php if(auth()->guard()->check()): ?>
-                        <a href="<?php echo e(url('/home')); ?>">Home</a>
-                    <?php else: ?>
-                        <a href="<?php echo e(route('login')); ?>">Login</a>
-                        <a href="<?php echo e(route('register')); ?>">Register</a>
-                    <?php endif; ?>
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
+                    @endauth
                 </div>
-            <?php endif; ?>
+            @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                  Liste des Recettes <?php echo e($message); ?>
-
+                    Liste des Recettes
                 </div>
 
                 <div class="links">
-                  <a href="index">Home</a>
-                  <a href="selectDrink">Selection des boissons</a>
-                  <a href="recettes">Liste des Recettes</a>
-                  <a href="ingredients">Liste des Ingrédients</a>
-                  <a href="ventes">Liste des Ventes</a>
+                    <a href="index">Home</a>
+                    <a href="selectDrink">Selection des boissons</a>
+                    <a href="recettes">Liste des Recettes</a>
+                    <a href="ingredients">Liste des Ingrédients</a>
+                    <a href="ventes">Liste des Ventes</a>
                 </div>
             </div>
         </div>
