@@ -72,7 +72,15 @@
 
             .choixBoisson{
               margin-left: 10em;
+            }
 
+            .menuTemplate {
+              background-color: black;
+              height: 2em;
+              text-align: center;
+            }
+            .menuTemplate  a{
+            color: white;
             }
 
         </style>
@@ -93,17 +101,7 @@
               <div class="content">
                 <div class="title m-b-md">
                 </div>
-
-                {{-- <div class="links">
-                   <a href="index">Home</a>
-                    <a href="selectDrink">Selection des boissons</a>
-                    <a href="recettes">Liste des Recettes</a>
-                    <a href="ingredients">Liste des Ingrédients</a>
-                    <a href="ventes">Liste des Ventes</a>
-                </div>
-              </div> --}}
-
-            </div>
+              </div>
         </div>
     </body>
 </html>
