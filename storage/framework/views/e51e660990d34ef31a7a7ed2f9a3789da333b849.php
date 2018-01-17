@@ -4,10 +4,27 @@
       Séléction des boissons !
   </div>
 </div>
-<div class="title m-b-md">
+
+<div class="titreBoisson">
   <?php $__currentLoopData = $drinkChoice; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
   <option> <?php echo e($key); ?> </option>
   <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+</div>
+
+<div class="choixBoisson">
+  <h1>Faites votre choix !</h1>
+<form method="post">
+            <select name="choixBoisson">
+                <option>Choissisez votre boisson</option>
+                <option>Café au lait</option>
+                <option>Thé</option>
+                <option>Expresso</option>
+                <option>Café long</option>
+
+            </select>
+            <input type="number" min="0" max="5" name="choixSucre" placeholder="Combien de sucres ?"/>
+            <input type="submit" value="Valider"/>
+</form>
 </div>
 
 
