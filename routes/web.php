@@ -15,7 +15,6 @@ Route::get('/index', 'IndexController@bienvenue');
 
 Route::get('/selectDrink','SelectDrinkController@listDrink');
 
-
 Route::get('/ingredients','IngredientController@listIngredients');
 
 Route::get('/ventes','VenteController@listeVente');

@@ -4,4 +4,6 @@
 <div class="title m-b-md">
   La pause s'impose !
 </div>
+ <img class="imageCafe" alt="image tasse a café"  src="../img/imgcafe.jpg" />
 </div>
+@include('template.footer')
