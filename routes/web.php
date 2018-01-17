@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('index', function () {
-    return view('index');
-});
+Route::get('/index', 'IndexController@bienvenue');
 
+
+
+
+Route::get('/selectDrink','SelectDrinkController@listDrink');
 
 
 
@@ -22,10 +24,10 @@ Route::get('/ventes',function(){
 	return view('Ventes');
 });
 
-Route::get('/ingredients', function () {
-    return view('ingredients');
-});
+Route::get('/ingredients','IngredientController@listIngredients');
 
-Route::get('/recettes','RecetteController@list');
 
 Route::get('/selectDrink','SelectDrinkController@selectDrink');
+
+Route::get('/recettes','RecetteController@listRecettes');
+
