@@ -15,9 +15,7 @@ Route::get('index', function () {
     return view('index');
 });
 
-Route::get('/selectDrink', function () {
-    return view('selectDrink');
-});
+
 
 
 Route::get('/ventes',function(){
@@ -30,3 +28,4 @@ Route::get('/ingredients', function () {
 
 Route::get('/recettes','RecetteController@list');
 
+Route::get('/selectDrink','SelectDrinkController@selectDrink');
