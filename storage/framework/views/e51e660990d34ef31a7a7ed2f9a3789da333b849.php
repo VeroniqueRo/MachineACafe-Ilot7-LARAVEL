@@ -77,18 +77,27 @@
                 </div>
             <?php endif; ?>
 
+
             <div class="content">
+
+              <div class="links">
+                  <a href="index">Home</a>
+                  <a href="selectDrink">Selection des boissons</a>
+                  <a href="recettes">Liste des Recettes</a>
+                  <a href="ingredients">Liste des Ingrédients</a>
+                  <a href="ventes">Liste des Ventes</a>
+              </div>
+
                 <div class="title m-b-md">
-                    Liste des Boissons
+                    Liste des Boissons :
                 </div>
 
-                <div class="links">
-                    <a href="index">Home</a>
-                    <a href="selectDrink">Selection des boissons</a>
-                    <a href="recettes">Liste des Recettes</a>
-                    <a href="ingredients">Liste des Ingrédients</a>
-                    <a href="ventes">Liste des Ventes</a>
+                <div class="title m-b-md">
+                  <?php $__currentLoopData = $drinkChoice; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                  <option> <?php echo e($key); ?> </option>
+                  <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                 </div>
+
             </div>
         </div>
     </body>

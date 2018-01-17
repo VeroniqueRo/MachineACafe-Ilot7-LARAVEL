@@ -15,9 +15,7 @@ Route::get('index', function () {
     return view('index');
 });
 
-Route::get('/selectDrink', function () {
-    return view('selectDrink');
-});
+Route::get('/selectDrink','SelectDrinkController@listDrink');
 
 
 Route::get('/ventes',function(){
