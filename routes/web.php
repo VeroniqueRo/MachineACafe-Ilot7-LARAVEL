@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('index', function () {
-    return view('index');
-});
+Route::get('/index', 'IndexController@bienvenue');
 
 Route::get('/selectDrink','SelectDrinkController@listDrink');
 
