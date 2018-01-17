@@ -1,4 +1,11 @@
-<!doctype html>
+@extends('template.template')
+@include('template.menu')
+<div class="content">
+<div class="title m-b-md">
+  La pose s'impose !
+</div>
+</div>
+{{-- <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -79,17 +86,17 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                  Liste des Recettes {{$message}}
+                  Liste des Recettes
                 </div>
 
                 <div class="links">
-                  <a href="index">Home</a>
-                  <a href="selectDrink">Selection des boissons</a>
-                  <a href="recettes">Liste des Recettes</a>
-                  <a href="ingredients">Liste des Ingrédients</a>
-                  <a href="ventes">Liste des Ventes</a>
+                    <a href="index">Home</a>
+                    <a href="selectDrink">Selection des boissons</a>
+                    <a href="recettes">Liste des Recettes</a>
+                    <a href="ingredients">Liste des Ingrédients</a>
+                    <a href="ventes">Liste des Ventes</a>
                 </div>
             </div>
         </div>
     </body>
-</html>
+</html> --}}
