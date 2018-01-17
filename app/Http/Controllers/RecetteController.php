@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 
 class RecetteController extends Controller
 {
-  function list() {
+  function listRecettes() {
      return view('recettes');
  }
 }
