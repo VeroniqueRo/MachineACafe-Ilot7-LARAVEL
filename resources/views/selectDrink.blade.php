@@ -1,4 +1,16 @@
-<!doctype html>
+@extends('template.template')
+@include('template.menu')
+<div class="content">
+  <div class="title m-b-md">
+      Séléction des boissons !
+  </div>
+</div>
+<div class="title m-b-md">
+  @foreach ($drinkChoice as $key)
+  <option> {{$key}} </option>
+  @endforeach
+</div>
+{{-- <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -90,15 +102,10 @@
 
                 <div class="title m-b-md">
                     Liste des Boissons :
-                </div>
+                </div> --}}
 
-                <div class="title m-b-md">
-                  @foreach ($drinkChoice as $key)
-                  <option> {{$key}} </option>
-                  @endforeach
-                </div>
 
-            </div>
+            {{-- </div>
         </div>
     </body>
-</html>
+</html> --}}

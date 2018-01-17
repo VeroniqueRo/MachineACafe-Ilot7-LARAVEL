@@ -1,4 +1,11 @@
-<!doctype html>
+@extends('template.template')
+@include('template.menu')
+<div class="content">
+<div class="title m-b-md">
+La liste des ingredients !
+</div>
+</div>
+{{-- <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
@@ -81,7 +88,7 @@
                 <div class="title m-b-md">
                   Liste des Ingrédients
                 </div>
-                
+
                 <div class="links">
                    <a href="index">Home</a>
                     <a href="selectDrink">Selection des boissons</a>
@@ -95,4 +102,4 @@
         </div>
     </div>
     </body>
-</html>
+</html> --}}
