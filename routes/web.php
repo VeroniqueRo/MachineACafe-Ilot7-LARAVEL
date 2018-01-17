@@ -27,6 +27,4 @@ Route::get('/ingredients', function () {
     return view('ingredients');
 });
 
-Route::get('/recettes', function () {
-    return view('recettes');
-});
+Route::get('/recettes','RecetteController@list');

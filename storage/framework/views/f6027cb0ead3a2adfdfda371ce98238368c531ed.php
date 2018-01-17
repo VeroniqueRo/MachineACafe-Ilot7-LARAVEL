@@ -79,7 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                  Liste des Recettes
+                  Liste des Recettes <?php echo e($message); ?>
+
                 </div>
 
                 <div class="links">
