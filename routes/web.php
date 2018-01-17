@@ -15,11 +15,11 @@ Route::get('/index', 'IndexController@bienvenue');
 
 Route::get('/selectDrink','SelectDrinkController@listDrink');
 
-Route::get('/ventes','VenteController@listeVente');
 
 Route::get('/ingredients','IngredientController@listIngredients');
 
-Route::get('/selectDrink','SelectDrinkController@selectDrink');
+Route::get('/ventes','VenteController@listeVente');
 
 Route::get('/recettes','RecetteController@listRecettes');
 
+?>
