@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                  Liste des Recettes {{$message}}
+                  Liste des Recettes
                 </div>
 
                 <div class="links">

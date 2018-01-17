@@ -23,8 +23,7 @@ Route::get('/selectDrink', function () {
 Route::get('/ventes',function(){
 	return view('Ventes');
 });
-Route::get('/ingredients', function () {
-    return view('ingredients');
-});
 
-Route::get('/recettes','RecetteController@list');
+Route::get('/ingredients','IngredientController@listIngredients');
+
+Route::get('/recettes','RecetteController@listRecettes');

@@ -81,7 +81,7 @@
                 <div class="title m-b-md">
                   Liste des Ingrédients
                 </div>
-
+                
                 <div class="links">
                   <a href="index">Home</a>
                   <a href="selectDrink">Selection des boissons</a>
