@@ -13,12 +13,7 @@
 
 Route::get('/index', 'IndexController@bienvenue');
 
-
-
-
 Route::get('/selectDrink','SelectDrinkController@listDrink');
-
-
 
 Route::get('/ventes',function(){
 	return view('Ventes');
@@ -26,8 +21,6 @@ Route::get('/ventes',function(){
 
 Route::get('/ingredients','IngredientController@listIngredients');
 
-
-Route::get('/selectDrink','SelectDrinkController@selectDrink');
-
 Route::get('/recettes','RecetteController@listRecettes');
 
+?>

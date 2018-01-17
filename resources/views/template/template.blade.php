@@ -46,6 +46,7 @@
             }
 
             .title {
+              margin-top: 30px;
                 font-size: 84px;
             }
 
