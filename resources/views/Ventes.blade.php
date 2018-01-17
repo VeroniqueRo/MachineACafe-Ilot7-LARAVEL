@@ -83,19 +83,11 @@
                 </div>
 
                 <div class="links">
-<<<<<<< HEAD
                     <a href="index">Home</a>
                     <a href="selectDrink">Selection des boissons</a>
                     <a href="recettes">Liste des Recettes</a>
                     <a href="ingredients">Liste des Ingrédients</a>
                     <a href="ventes">Liste des Ventes</a>
-=======
-                  <a href="index">Home</a>
-                  <a href="selectDrink">Selection des boissons</a>
-                  <a href="recettes">Liste des Recettes</a>
-                  <a href="ingredients">Liste des Ingrédients</a>
-                  <a href="ventes">Liste des Ventes</a>
->>>>>>> 8e89fad2fc50958281b50956ac4ef917600ec0e6
                 </div>
             </div>
         </div>
