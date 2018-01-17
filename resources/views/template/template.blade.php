@@ -1,59 +1,110 @@
-<!doctype html>
-    <html lang="{{ app()->getLocale() }}">
-        <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            {{--  <meta name="description" content="">
-            <meta name="author" content="">
-            <link rel="icon" href="../../../../favicon.ico">  --}}
-        
-            <title>Machine à Café Ilot 7</title>
-        
-            <!-- Fonts -->
-            <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-            {{--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">      --}}
-            <!-- Custom styles for this template -->
-            <link rel="stylesheet" href="{{('css/app.css')}}">
-            <link href="cover.css" rel="stylesheet">
-        </head>
-    
-        <body>
-    
-        <div class="site-wrapper">
-    
-            <div class="site-wrapper-inner">
-    
-            <div class="cover-container">
-    
-                <header class="masthead clearfix">
-                <div class="inner">
-                    
-                    @include('template.menu')
-                    
-                </div>
-                </header>
-    
-                <main role="main" class="inner cover">
-                
-                </main>
-    
-                <footer class="mastfoot">
-               
-                </footer>
-    
+
+<html lang="{{ app()->getLocale() }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Machine a café</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link src="css/style.css">
+        <!-- Styles -->
+        <style>
+        html, body {
+            background-color: #fff;
+            color: #636b6f;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .full-height {
+            height: 100vh;
+        }
+
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .position-ref {
+            position: relative;
+        }
+
+        .top-right {
+            position: absolute;
+            right: 10px;
+            top: 18px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .title {
+          margin-top: 30px;
+            font-size: 84px;
+        }
+
+        .links > a {
+            color: #636b6f;
+            padding: 0 25px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .m-b-md {
+            margin-bottom: 30px;
+        }
+
+        .titreBoisson{
+          margin-top: 2em;
+          text-align: center;
+          font-size: 3em;
+        }
+
+        .choixBoisson{
+          margin-left: 10em;
+        }
+
+        .menuTemplate {
+          background-color: black;
+          height: 2em;
+          text-align: center;
+        }
+        .menuTemplate  a{
+        color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div class="title m-b-md">
+                @yield('content')
             </div>
-    
-            </div>
-    
         </div>
-    
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-        <script src="../../../../assets/js/vendor/popper.min.js"></script>
-        <script src="../../../../dist/js/bootstrap.min.js"></script>
-        </body>
-    </html>
+        <div class="flex-center position-ref full-height">
+            @if (Route::has('login'))
+                <div class="top-right links">
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
+                    @endauth
+                </div>
+            @endif
+
+              
+
+        </div>
+    </body>
+</html>

@@ -1,13 +1,14 @@
 @extends('template.template')
 @include('template.menu')
 
-@section('content')
+
 
     <div class="content">
         <div class="title m-b-md">
         Liste des Ventes
         </div>
     </div>
+@section('content')
     <div class="container">
         <table class="table table-hover">
                 <thead>
