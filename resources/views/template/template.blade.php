@@ -63,6 +63,18 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .titreBoisson{
+              margin-top: 2em;
+              text-align: center;
+              font-size: 3em;
+            }
+
+            .choixBoisson{
+              margin-left: 10em;
+
+            }
+
         </style>
     </head>
     <body>
@@ -80,7 +92,6 @@
 
               <div class="content">
                 <div class="title m-b-md">
-
                 </div>
 
                 {{-- <div class="links">
