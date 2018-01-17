@@ -79,15 +79,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Liste des Recettes
+                  Liste des Recettes <?php echo e($message); ?>
+
                 </div>
 
                 <div class="links">
-                    <a href="recettes">Liste des Recettes</a>
-                    <a href="#">Laracasts</a>
-                    <a href="#">News</a>
-                    <a href="#">Forge</a>
-                    <a href="#">GitHub</a>
+                  <a href="index">Home</a>
+                  <a href="selectDrink">Selection des boissons</a>
+                  <a href="recettes">Liste des Recettes</a>
+                  <a href="ingredients">Liste des Ingrédients</a>
+                  <a href="ventes">Liste des Ventes</a>
                 </div>
             </div>
         </div>
