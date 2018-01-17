@@ -13,6 +13,22 @@
         <table class="table table-hover">
                 <thead>
                     <tr>
+                        @foreach ($RetourTab as $typeVente => $donneeVente)
+                        <th>{{ $typeVente}}</th>
+                        @endforeach  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        @foreach ($RetourTab as $typeVente => $donneeVente)
+                        <td>{{ $donneeVente }}</td>
+                        @endforeach
+                    </tr> 
+                </tbody>
+
+
+                {{--  <thead>
+                    <tr>
                         <th>Type</th>
                         <th>Informations</th>
                     </tr>
@@ -24,7 +40,7 @@
                         <td>{{ $donneeVente }}</td>
                     </tr>
                     @endforeach                            
-                </tbody>
+                </tbody>  --}}
         </table>
     </div> 
     
