@@ -9,7 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
         <!-- Styles -->
         <style>
             html, body {
@@ -62,6 +62,8 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+
         </style>
     </head>
     <body>
@@ -82,12 +84,32 @@
                     Liste des Ventes
                 </div>
 
-                <div class="links">
+                {{--  <div class="links">
                   <a href="index">Home</a>
                   <a href="selectDrink">Selection des boissons</a>
                   <a href="recettes">Liste des Recettes</a>
                   <a href="ingredients">Liste des Ingrédients</a>
                   <a href="ventes">Liste des Ventes</a>
+                </div>  --}}
+               
+                <div class="container">
+                <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Informations</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($RetourTab as $typeVente => $donneeVente)
+                            <tr>
+                                <td>{{ $typeVente }}</td>
+                                <td>{{ $donneeVente }}</td>
+                            </tr>
+                            @endforeach                            
+                        </tbody>
+                    </table>
+                
                 </div>
             </div>
         </div>

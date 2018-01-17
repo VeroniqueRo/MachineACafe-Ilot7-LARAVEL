@@ -20,9 +20,9 @@ Route::get('/selectDrink', function () {
 });
 
 
-Route::get('/ventes',function(){
-	return view('Ventes');
-});
+Route::get('/ventes','VenteController@listeVente');
+
+
 Route::get('/ingredients', function () {
     return view('ingredients');
 });
