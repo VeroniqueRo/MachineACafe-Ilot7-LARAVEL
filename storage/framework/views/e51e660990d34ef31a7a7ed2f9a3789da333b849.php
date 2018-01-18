@@ -22,13 +22,15 @@
                 <option>Café long</option>
 
             </select>
-            <input type="number" min="0" max="5" name="choixSucre" placeholder="Combien de sucres ?"/>
+            <select name="choixSucre" placeholder="Combien de sucres ?"/>
+            <option>Combien de sucres?</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
             <input type="submit" value="Valider"/>
 </form>
 </div>
-
-
-
-            
 
 <?php echo $__env->make('template.template', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
