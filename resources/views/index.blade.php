@@ -2,7 +2,7 @@
 @include('template.menu')
 <div class="content">
 <div class="title m-b-md">
-  La pose s'impose !
+  La pause s'impose !
 </div>
 </div>
 
