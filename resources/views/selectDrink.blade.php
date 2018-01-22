@@ -7,9 +7,27 @@
 </div>
 
 <div class="titreBoisson">
-  @foreach ($drinkChoice as $key)
-  <option> {{$key}} </option>
+  
+</div>
+<div class = "container">
+<div class="tableauBoisson ">
+  <table class = "table table-hover">
+    <thead>
+      <tr>
+  @foreach ($drinkChoice as $typeboisson=>$prix)
+  <td> {{$typeboisson}} </td>
   @endforeach
+     </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+  @foreach($drinkChoice as $typeboisson=>$prix)
+  <td> {{$prix}} </td>
+  @endforeach
+</tr>
+</tbody>
+</table>
 </div>
 
 <div class="choixBoisson">
@@ -32,4 +50,5 @@
             <option>5</option>
             <input type="submit" value="Valider"/>
 </form>
+</div>
 </div>
