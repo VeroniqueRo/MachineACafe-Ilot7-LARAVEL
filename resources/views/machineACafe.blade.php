@@ -1,4 +1,5 @@
-<?php echo $__env->make('template.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+@extends('template.template')
+@include('template.menu')
 <div class="content">
   <div class="title m-b-md">
       Séléction des boissons !
@@ -13,16 +14,16 @@
   <table class = "table table-hover">
     <thead>
       <tr>
-        <?php $__currentLoopData = $drinkChoice; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $typeboisson=>$prix): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-        <td> <?php echo e($typeboisson); ?> </td>
-        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        @foreach ($drinkChoice as $typeboisson=>$prix)
+        <td> {{$typeboisson}} </td>
+        @endforeach
       </tr>
     </thead>
     <tbody>
      <tr>
-        <?php $__currentLoopData = $drinkChoice; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $typeboisson=>$prix): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-          <td> <?php echo e($prix); ?> </td>
-        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+        @foreach($drinkChoice as $typeboisson=>$prix)
+          <td> {{$prix}} </td>
+        @endforeach
       </tr>
     </tbody>
   </table>
@@ -50,5 +51,3 @@
   </div>
 
 </div>
-
-<?php echo $__env->make('template.template', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
