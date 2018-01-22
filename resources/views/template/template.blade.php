@@ -1,17 +1,21 @@
-<!doctype html>
+
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Machine a café</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link href="/css/app.css" rel="stylesheet" type="text/css">
+        <link src="css/style.css">
+
         <!-- Styles -->
-        <style>
+        {{--  <style>
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -46,7 +50,7 @@
             }
 
             .title {
-              margin-top: 30px;
+            margin-top: 30px;
                 font-size: 84px;
             }
 
@@ -63,9 +67,34 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-        </style>
+
+            .titreBoisson{
+            margin-top: 2em;
+            text-align: center;
+            font-size: 3em;
+            }
+
+            .choixBoisson{
+            margin-left: 10em;
+            }
+
+            .menuTemplate {
+            background-color: black;
+            height: 2em;
+            text-align: center;
+            }
+            .menuTemplate  a{
+            color: white;
+            }
+        </style>  --}}
+
     </head>
     <body>
+        <div class="content">
+            <div class="title m-b-md">
+                @yield('content')
+            </div>
+        </div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -78,21 +107,6 @@
                 </div>
             @endif
 
-              <div class="content">
-                <div class="title m-b-md">
-
-                </div>
-
-                {{-- <div class="links">
-                   <a href="index">Home</a>
-                    <a href="selectDrink">Selection des boissons</a>
-                    <a href="recettes">Liste des Recettes</a>
-                    <a href="ingredients">Liste des Ingrédients</a>
-                    <a href="ventes">Liste des Ventes</a>
-                </div>
-              </div> --}}
-
-            </div>
         </div>
     </body>
 </html>

@@ -7,13 +7,15 @@ class VenteController extends Controller{
 
  public function listeVente() {
 
-    $venteTab = array(
-        "codevente" => "1",
-        "datevente" => "2018-01-04",
-        "heurevente" => "08:17:57",
-        "nbsucres" => "0",
-        "boisson_codeboisson" => "caf"
-    );
+    $venteTab = [
+      "N°" => "1",
+      "Boisson commandée" => "Café",  
+      "Date" => "2018/01/04",
+      "Heure" => "08:17:57",
+      "Nb de sucres" => "0",
+      "Somme insérée" => "0",
+      "Somme rendue" => "0"
+    ];
     
     return view("ventes",["RetourTab" => $venteTab]);
   }
