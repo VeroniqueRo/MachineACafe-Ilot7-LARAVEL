@@ -1,11 +1,7 @@
 @extends('template.template')
-@include('template.menu')
-
-    <div class="content">
-        <div class="title m-b-md">
+@section('titre')
         Liste des Ventes
-        </div>
-    </div>
+@endsection
 @section('content')
     <div class="container">
         <table class="table table-hover">
@@ -25,5 +21,4 @@
             </tbody>
         </table>
     </div>
-
 @endsection
