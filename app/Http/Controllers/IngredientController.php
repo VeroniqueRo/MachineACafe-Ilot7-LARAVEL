@@ -10,9 +10,8 @@ class IngredientController extends Controller
   		'Thé'  => 100,
   		'Lait' => 100,
       'Sucre' => 100
-  		);
-
-
+			);
+			
      return view('ingredients', compact('ingredients'));
  }
 }
