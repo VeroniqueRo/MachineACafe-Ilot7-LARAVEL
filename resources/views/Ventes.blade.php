@@ -12,9 +12,9 @@
 
 @section('content')
     <div class="container">
-        <table class="table table-hover">
+        <table class="table table-hover table-bordered">
             <thead>
-                <tr>
+                <tr class="active">
                     @foreach ($RetourTab[0] as $titre => $valeur)
                         <th>{{ $titre}}</th>
                     @endforeach
@@ -32,9 +32,7 @@
             </tbody>
         </table>
         <div class="boutons">
-            {{--  <button type="button" class="btn btn-success disabled">Ajouter</button>  --}}
             <button type="button" class="btn btn-default">Gérer les ventes</button>
-            {{--  <button type="button" class="btn btn-danger disabled">Annuler</button>  --}}
         </div>
     </div>
 @endsection

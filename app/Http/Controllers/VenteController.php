@@ -14,8 +14,7 @@ class VenteController extends Controller{
         "Date" => "2018/01/04",
         "Heure" => "08:17:57",
         "Nb de sucres" => "0",
-        "Somme insérée" => "0,60 €",
-        "Somme rendue" => "0,00 €"
+     
       ),
       array (
         "N°" => "2",
@@ -23,8 +22,7 @@ class VenteController extends Controller{
         "Date" => "2018/01/04",
         "Heure" => "09:17:57",
         "Nb de sucres" => "1",
-        "Somme insérée" => "1,00 €",
-        "Somme rendue" => "0,40 €"
+       
       ),
       array (
         "N°" => "3",
@@ -32,8 +30,7 @@ class VenteController extends Controller{
         "Date" => "2018/01/14",
         "Heure" => "18:17:02",
         "Nb de sucres" => "5",
-        "Somme insérée" => "1,00 €",
-        "Somme rendue" => "0,50 €"
+        
       ),
       array (
         "N°" => "4",
@@ -41,8 +38,7 @@ class VenteController extends Controller{
         "Date" => "2018/01/15",
         "Heure" => "08:17:02",
         "Nb de sucres" => "2",
-        "Somme insérée" => "1,00 €",
-        "Somme rendue" => "0,50 €"
+    
       ),
       array (
         "N°" => "5",
@@ -50,8 +46,7 @@ class VenteController extends Controller{
         "Date" => "2018/01/16",
         "Heure" => "10:17:57",
         "Nb de sucres" => "1",
-        "Somme insérée" => "1,00 €",
-        "Somme rendue" => "0,40 €"
+   
       ),
     );
     
