@@ -92,18 +92,20 @@ footer{
 }
 
 .pieces img{
-  height: 5em;
-}
-
-.pieces img:hover{
+  margin-top: 2em;
   height: 10em;
 }
 
+.pieces img:hover{
+  height: 10.5em;
+}
+
 .etat2e, .etat1e, .etat50ct, .etat20ct, .etat10ct, .etat5ct{
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .button {
+  margin-top: 2em;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -126,4 +128,32 @@ footer{
     background-color: white;
     color: black;
     border: 2px solid #008CBA;
+}
+
+a{
+     color:#ccc;
+     text-shadow:0 -1px 0 black;
+}
+a:hover,a:focus{
+     background:rgba(0,0,0,.4);
+     box-shadow:0 1px 0 rgba(255,255,255,.4);
+}
+a span{
+  position:absolute;
+  margin-top:-40px;
+  margin-left:-35px;
+  color:white;
+  background:rgba(0,0,0,.9);
+  padding:15px;
+  border-radius:3px;
+  box-shadow:0 0 2px rgba(0,0,0,.5);
+  transform:scale(0) rotate(-12deg);
+  transition:all .25s;
+  opacity:0;
+  font-size: 1.4em;
+}
+
+a:hover span, a:focus span{
+     transform:scale(1) rotate(0);
+     opacity:1;
 }
