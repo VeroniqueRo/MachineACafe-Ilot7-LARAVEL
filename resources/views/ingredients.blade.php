@@ -1,7 +1,7 @@
 @extends('template.template')
 
 @section('titre')
-La liste des ingredients !
+La liste des ingredients
 </div>
 </div>
 <div class = "container">

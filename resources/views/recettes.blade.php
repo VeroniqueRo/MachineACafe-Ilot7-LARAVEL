@@ -1,6 +1,6 @@
 @extends('template.template')
 @section('titre')
-  La liste des recettes !
+  La liste des recettes 
 @endsection
 @section('content')
 <div class = "container">
