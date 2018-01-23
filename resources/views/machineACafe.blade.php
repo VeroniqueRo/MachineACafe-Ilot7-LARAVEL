@@ -1,7 +1,7 @@
 @extends('template.template')
       
 @section('titre')
-  Séléction des boissons !
+  Séléction des boissons 
 @endsection
 
 @section('content')
