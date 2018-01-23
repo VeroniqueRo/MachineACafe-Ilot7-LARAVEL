@@ -1,7 +1,7 @@
 @extends('template.template')
 
 @section('titre')
-La liste des ingredients !
+La liste des ingredients
 </div>
 </div>
 <div class = "container">
@@ -21,9 +21,7 @@ La liste des ingredients !
   @endforeach
 </table>
 </div>
-  <button type='button' class='btn btn-success'>Ajouter</button>
-  <button type='button' class='btn btn-default'>Modifier</button>
-  <button type='button' class='btn btn-danger'>Supprimer</button>
+ @include('template.boutonAddRemoveModif');
 </div>
 @endsection
 
