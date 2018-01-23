@@ -1,5 +1,5 @@
 <?php $__env->startSection('titre'); ?>
-  La liste des recettes !
+  La liste des recettes 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 <div class = "container">
@@ -27,7 +27,7 @@
 					<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 		</table>
 	</div> 
-	<?php echo $__env->make("template.boutonAddRemove", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+	<?php echo $__env->make("template.boutonAddRemoveModif", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
 <?php $__env->stopSection(); ?>
 
 

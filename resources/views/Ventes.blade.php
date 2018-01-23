@@ -1,7 +1,7 @@
 @extends('template.template')
 
 @section('image')
-    <a href="ventes"><img class="imageCompte" alt="image de comptes"  src="../img/faire-ses-comptes.jpg" />
+    <a href="ventes"><img class="imageCompte" alt="image de comptes"  src="../img/faire-ses-comptes.jpg" /></a>
 @endsection
 
 @section('titre')
@@ -18,7 +18,7 @@
                     @foreach ($RetourTab[0] as $titre => $valeur)
                         <th>{{ $titre}}</th>
                     @endforeach
-                    
+
                 </tr>
             </thead>
             <tbody>
