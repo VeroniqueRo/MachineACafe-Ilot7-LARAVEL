@@ -87,8 +87,17 @@ max-width: 500px;
 max-height: 500px;
 }
 
-footer{
-  text-align: right;
+footer {
+  background-color: #DCDCDC;
+  bottom: 10px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+footer p{
+    color: black;
+    font-size: 1.2em;
 }
 
 .pieces img{
