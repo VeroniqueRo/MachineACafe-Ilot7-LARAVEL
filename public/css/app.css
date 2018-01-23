@@ -169,3 +169,11 @@ a:hover span, a:focus span{
      transform:scale(1) rotate(0);
      opacity:1;
 }
+
+.tableauBoisson td{
+  text-align: center;
+}
+
+.choixBoisson{
+  margin-top: 20px;
+}
