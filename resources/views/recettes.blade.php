@@ -1,10 +1,8 @@
 @extends('template.template')
-@include('template.menu')
-<div class="content">
-	<div class="title m-b-md">
-		La liste des recettes !
-	</div>
-</div>
+@section('titre')
+  La liste des recettes !
+@endsection
+@section('content')
 <div class = "container">
 	<div class="tableauRecette ">
 		<table class = "table table-hover">	
@@ -30,5 +28,9 @@
 					@endforeach
 		</table>
 	</div> 
+@endsection
+
+
+
 
 

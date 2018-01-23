@@ -13,12 +13,14 @@
 
 Route::get('/index', 'IndexController@bienvenue');
 
-Route::get('/selectDrink','SelectDrinkController@listDrink');
+Route::get('/machineACafe','MachineACafeController@listDrink');
 
 Route::get('/ingredients','IngredientController@listIngredients');
 
 Route::get('/ventes','VenteController@listeVente');
 
 Route::get('/recettes','RecetteController@listRecettes');
+
+Route::get('/gestionMonnaie','GestionMonnaieController@listMonnaie');
 
 ?>
