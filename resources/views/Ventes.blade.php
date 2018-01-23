@@ -1,7 +1,7 @@
 @extends('template.template')
 
 @section('image')
-    <a href="Ventes"><img class="imageCompte" alt="image de comptes"  src="../img/faire-ses-comptes.jpg" />
+    <a href="ventes"><img class="imageCompte" alt="image de comptes"  src="../img/faire-ses-comptes.jpg" />
 @endsection
 
 @section('titre')
@@ -12,9 +12,9 @@
 
 @section('content')
     <div class="container">
-        <table class="table table-hover">
+        <table class="table table-hover table-bordered">
             <thead>
-                <tr>
+                <tr class="active">
                     @foreach ($RetourTab[0] as $titre => $valeur)
                         <th>{{ $titre}}</th>
                     @endforeach
