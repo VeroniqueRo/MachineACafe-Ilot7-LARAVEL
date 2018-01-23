@@ -1,9 +1,7 @@
 @extends('template.template')
-@include('template.menu')
-<div class="content">
-<div class="title m-b-md">
+@section('titre')
   La pause s'impose !
-</div>
- <img class="imageCafe" alt="image tasse a café"  src="../img/imgcafe.jpg" />
-</div>
-@include('template.footer')
+@endsection
+@section('content')
+ <a  href="machineACafe"><img class="imageCafe" alt="image tasse a café"  src="../img/imgcafe.jpg" />
+@endsection
