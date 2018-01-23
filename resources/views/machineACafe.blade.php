@@ -24,7 +24,6 @@
       </tbody>
     </table>
   </div>
-
     <div class="choixBoisson">
       <h1>Faites votre choix !</h1>
       <form method="post">
