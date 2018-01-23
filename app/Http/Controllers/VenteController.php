@@ -6,44 +6,57 @@ class VenteController extends Controller{
 /**Affiche toutes les ventes passées */
 
  public function listeVente() {
-
-    $venteTab = [
-      "N°" => "1",
-      "Boisson commandée" => "Café",  
-      "Date" => "2018/01/04",
-      "Heure" => "08:17:57",
-      "Nb de sucres" => "0",
-      "Somme insérée" => "0",
-      "Somme rendue" => "0"
-    ];
+  
+    $venteTab = array (
+      array (
+        "N°" => "1",
+        "Boisson commandée" => "Café",  
+        "Date" => "2018/01/04",
+        "Heure" => "08:17:57",
+        "Nb de sucres" => "0",
+        "Somme insérée" => "0,60 €",
+        "Somme rendue" => "0,00 €"
+      ),
+      array (
+        "N°" => "2",
+        "Boisson commandée" => "Thé",  
+        "Date" => "2018/01/04",
+        "Heure" => "09:17:57",
+        "Nb de sucres" => "1",
+        "Somme insérée" => "1,00 €",
+        "Somme rendue" => "0,40 €"
+      ),
+      array (
+        "N°" => "3",
+        "Boisson commandée" => "Expresso",  
+        "Date" => "2018/01/14",
+        "Heure" => "18:17:02",
+        "Nb de sucres" => "5",
+        "Somme insérée" => "1,00 €",
+        "Somme rendue" => "0,50 €"
+      ),
+      array (
+        "N°" => "4",
+        "Boisson commandée" => "Expresso",  
+        "Date" => "2018/01/15",
+        "Heure" => "08:17:02",
+        "Nb de sucres" => "2",
+        "Somme insérée" => "1,00 €",
+        "Somme rendue" => "0,50 €"
+      ),
+      array (
+        "N°" => "5",
+        "Boisson commandée" => "Thé",  
+        "Date" => "2018/01/16",
+        "Heure" => "10:17:57",
+        "Nb de sucres" => "1",
+        "Somme insérée" => "1,00 €",
+        "Somme rendue" => "0,40 €"
+      ),
+    );
     
     return view("ventes",["RetourTab" => $venteTab]);
   }
-
-//   public function listeVente() {
-
-//     $boissonsTab = array(
-//         "Café Long" => array(
-//         "Café" => 2,
-//         "Eau"  => 2
-//       ),
-//         "Expresso" => array(
-//         "Café" => 1,
-//         "Eau"  => 1
-//       ),
-//         "Thé" => array(
-//         "Thé" => 1,
-//         "Eau" => 1
-//       ),
-//         "Café au Lait" => array(
-//         "Café" => 1,
-//         "Lait" => 1,
-//         "Eau"  => 2
-//       ),
-//     );
-
-//     return view('ventes',compact('boissonsTab'));
-//   }
 }
 ?>
 
