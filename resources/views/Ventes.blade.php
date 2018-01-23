@@ -32,9 +32,7 @@
             </tbody>
         </table>
         <div class="boutons">
-            {{--  <button type="button" class="btn btn-success disabled">Ajouter</button>  --}}
             <button type="button" class="btn btn-default">Gérer les ventes</button>
-            {{--  <button type="button" class="btn btn-danger disabled">Annuler</button>  --}}
         </div>
     </div>
 @endsection
