@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 class machineACafeController extends Controller
 {
 function listDrink() {
-    $drinkChoice =['Café au lait' => 70, 'Thé' => 50, 'Expresso' => 60, 'Café long' => 70];
+    $drinkChoice =['Café au lait' => 60, 'Thé' => 70, 'Expresso' => 40, 'Café long' => 50];
 
      return view('machineACafe', compact('drinkChoice'));
 

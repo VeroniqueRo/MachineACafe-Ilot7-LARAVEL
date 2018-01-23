@@ -7,13 +7,13 @@
 	<div class="tableauRecette ">
 		<table class = "table table-hover">	
 			<tr>
-				<td><b>NomBoisson</b></td> 
-				<td><b>Ingrédients</b></td>
-				<td><b>Quantités</b></td>
-				<td><b>Ingrédients</b></td>
-				<td><b>Quantités</b></td>
-				<td><b>Ingrédients</b></td>
-				<td><b>Quantités</b></td>
+				<th><b>NomBoisson</b></th> 
+				<th><b>Ingrédients</b></th>
+				<th><b>Quantité</b></th>
+				<th><b>Ingrédients</b></th>
+				<th><b>Quantité</b></th>
+				<th><b>Ingrédients</b></th>
+				<th><b>Quantité</b></th>
 			</tr>
 		</tr>
 					@foreach($recette as $nomboisson=>$rec)
@@ -28,9 +28,7 @@
 					@endforeach
 		</table>
 	</div> 
-	<button type="button" class='btn btn-success'>Ajouter</button>
-	<button type="button" class='btn btn-default'>Modifier</button>
-	<button type="button" class='btn btn-danger'>Supprimer</button>
+	@include("template.boutonAddRemove");
 @endsection
 
 
