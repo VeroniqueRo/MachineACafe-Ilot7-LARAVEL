@@ -1,4 +1,3 @@
-
     <div class="container">
         <div class="text-center center-block"></br>
             <p>Khaled D. / Thomas F. / Romain J. / Véronique R.   </p>
