@@ -1,8 +1,11 @@
 @extends('template.template')
+
 @section('titre')
   Gestion de l'argent
 @endsection
+
 @section('content')
+
 <div class="container">
     <div class="col-sm-2 pieces">
       <p><a href="#"><span>Il reste 10 pieces</span><img class="piece_2" alt="piece 2euro" src="../img/2euros.png"/></a></p>
@@ -36,4 +39,5 @@
     </div>
   </div>
 </div>
+
 @endsection

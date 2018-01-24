@@ -23,6 +23,8 @@ Route::get('/recettes','RecetteController@listRecettes');
 
 Route::get('/gestionMonnaie','GestionMonnaieController@listMonnaie');
 
-Route::get('/{CodeBoisson}','MachineACafeController@detailboisson');
+Route::get('/boisson/{code}', 'MachineACafeController@showDrink');
+
+
 
 ?>
