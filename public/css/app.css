@@ -172,5 +172,13 @@ a:hover span, a:focus span{
 
 th, td {
   text-align: center;
-  width: 20%
+  width: 20%;
+}
+
+.tableauBoisson td{
+  text-align: center;
+}
+
+.choixBoisson{
+  margin-top: 20px;
 }
