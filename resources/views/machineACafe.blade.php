@@ -7,32 +7,28 @@
 @section('content')
   <div class = "container">
   <div class="tableauBoisson ">
-    <table class = "table table-hover">
+    <table class = "table table-hover table-bordered">
       <thead>
-        <tr>
-          @foreach ($drinkChoice as $typeboisson=>$prix)
-          <td> {{$typeboisson}} </td>
-          @endforeach
+        <tr class="active">
+            @foreach ($drinks as $drinkName)
+            <td><a href="/boisson/{{$drinkName->codeboisson}}">{{ $drinkName->nomboisson}} </a></td>
+            @endforeach
         </tr>
       </thead>
-      <tbody>
-      <tr>
-          @foreach($drinkChoice as $typeboisson=>$prix)
-            <td> {{$prix}} </td>
-          @endforeach
-        </tr>
-      </tbody>
     </table>
   </div>
     <div class="choixBoisson">
       <h1>Faites votre choix !</h1>
-      <form method="post">
+      <form method="post" action="/boisson/{{$drinkName->codeboisson}}">
         <select name="choixBoisson">
-          <option>Choissisez votre boisson</option>
+          @foreach ($drinks as $drinkName)
+            <option><a href="/boisson/{{$drinkName->codeboisson}}">{{ $drinkName->nomboisson}} </a></option>
+          @endforeach
+            {{--  <option>Choissisez votre boisson</option>
           <option>Café au lait</option>
           <option>Thé</option>
           <option>Expresso</option>
-          <option>Café long</option>
+          <option>Café long</option>  --}}
         </select>
         <select name="choixSucre" placeholder="Combien de sucres ?"/>
           <option>Combien de sucres?</option>
