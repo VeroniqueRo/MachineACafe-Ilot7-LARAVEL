@@ -8,20 +8,15 @@
   <div class = "container">
   <div class="tableauBoisson ">
     <table class = "table table-hover">
-      <thead>
+      
         <tr>
-          @foreach ($drinkChoice as $typeboisson=>$prix)
-          <td> {{$typeboisson}} </td>
-          @endforeach
+          <th>Nom Boisson</th>      
+            @foreach ($toto as $typeboisson)  
+              <td><a href="{{$typeboisson->CodeBoisson}}">{{$typeboisson->NomBoisson}}</a></td>        
+            @endforeach
         </tr>
-      </thead>
-      <tbody>
-      <tr>
-          @foreach($drinkChoice as $typeboisson=>$prix)
-            <td> {{$prix}} </td>
-          @endforeach
-        </tr>
-      </tbody>
+      
+ 
     </table>
   </div>
     <div class="choixBoisson">

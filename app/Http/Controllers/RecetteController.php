@@ -26,6 +26,7 @@ class RecetteController extends Controller
 								),
   	            );
 
+
      return view('recettes',compact('recette'));
 	}
 }
