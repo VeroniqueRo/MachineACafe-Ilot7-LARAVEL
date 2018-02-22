@@ -31,7 +31,6 @@
 // ROUTES POUR LA GESTION DES BOISSONS
 /////////////////////////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
     // Routes pour l'affichage du tableau avec la liste des boissons
 
         Route::get('/Liste_boissons','BoissonController@index')->name('listeBoissons')->middleware('auth');
@@ -164,9 +163,6 @@
         Route::get('/gestionMonnaie','GestionMonnaieController@listMonnaie')->middleware('auth');
 
     
-=======
-
->>>>>>> 5f30d2323a5f26886195859324ba735aa7337688
 ?>
 
 
