@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class = "container">
+<div class = "container table-responsive">
     <div class="tableauRecettes">
         <table class = "table table-hover table-bordered">
             <tr class="active">  

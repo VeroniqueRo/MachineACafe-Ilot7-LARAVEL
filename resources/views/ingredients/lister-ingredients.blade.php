@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-<div class = "container">
+<div class = "container table-responsive">
     <div class="tableauIngredients">
         <table class = "table table-hover table-bordered">
             <tr class="active">  
@@ -24,9 +24,9 @@
                 <td><a href="{{ route('formDeleteIngredient',[$ingredient->id])}}"><button type="button" class="btn btn-danger">Supprimer</button></a></td>
             </tr>
             @endforeach
-        </table>        
-        <a href="/ingredients/ajouter-ingredient"><button type="button" class="btn btn-primary">Ajouter un ingredient</button></a>
-        <a href="{{ route('listeBoissons')}}"><button type="button" class="btn btn-info">Retour à la liste des boissons</button></a>
+        </table>
     </div>
-</div>    
+</div>
+<a href="/ingredients/ajouter-ingredient"><button type="button" class="btn btn-primary">Ajouter un ingredient</button></a>
+<a href="{{ route('listeBoissons')}}"><button type="button" class="btn btn-info">Retour à la liste des boissons</button></a>
 @endsection
