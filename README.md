@@ -1,2 +1,2 @@
-# MachineACafe-Ilot7-LARAVEL
-La machine à café en PHP sous LARAVEL
+# MachineACafe-LARAVEL-Perso-V2
+Machine à café perso sous LARAVEL avec nommenclature de la BDD normalisée et id auto-incrémenté
