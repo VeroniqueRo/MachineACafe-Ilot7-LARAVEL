@@ -376,6 +376,11 @@ $(document).ready(function(){
         
         
     });
+
+    function timer(){
+        document.getElementById("formulaire").submit();
+      }
+      
     
     $('#btnPay').click(function(){
         let drinkPrice = 0.5;
@@ -393,13 +398,12 @@ $(document).ready(function(){
             }
         
             displayBoisson(SELECTED);
-            document.getElementById("formulaire").submit();
+            setTimeout(timer, 3000);
+            // document.getElementById("formulaire").submit();
        
         } else {
             affiche('crédit insuffisant ou pas select : crédit actuel ' + COMPTEUR + '€');
         }
-        
-        
     });
     
     $('#btnCancel').click(function(){
