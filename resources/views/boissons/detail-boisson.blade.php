@@ -53,7 +53,7 @@
                 <form class="" action="{{ route('supprimeRecette', [ $boisson->id, $ingredient->id ]) }}" method="post">
                     {{ csrf_field() }} 
                     {{ method_field('DELETE') }} 
-                    <a href=""><button type="submit" class="btn btn-danger">Supprimer l'ingrédient</button></a>
+                    <a href=""><button type="submit" class="btn btn-danger">Supprimer la recette</button></a>
                 </form>
             </td>
         </tr>
