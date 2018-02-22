@@ -9,9 +9,21 @@
 @endsection
 
 @section('content')
+    <style>
+        #tableauVente{
+            margin:10px auto;
+            width:100%;
+            min-width:400px;
+            max-width:700px;
+        }
+        #tableauVente table{
+            margin:0px;
+            width:100%;
+        }
+    </style>
     <div class = "container">
-        <div class="tableauVentes">
-            <table class = "table table-hover table-bordered">  
+        <div class="container table-responsive tableauVente">
+            <table class="table table-hover table-bordered text-center">
                 <tr class="active">
                     <td>Numéro de vente</br><a href="{{ route('triUP-V')}}"><button type="button" class="btn btn-light">UP</button></a>
                         <a href="{{ route('triDOWN-V')}}"><button type="button" class="btn btn-light">DOWN</button></a></td>
