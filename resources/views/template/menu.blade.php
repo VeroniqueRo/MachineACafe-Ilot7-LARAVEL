@@ -14,8 +14,8 @@
       <div class="collapse navbar-collapse" id="app-navbar-collapse">
         <!-- Left Side Of Navbar -->
         <ul class="nav navbar-nav navbar-left">
-          @if (Illuminate\Support\Facades\Auth::check())
-              {{--  @if (Illuminate\Support\Facades\Auth::user()->role=== 'admin')  --}}
+          @if (Route::has('login'))
+          @auth
               <li class="active"><a href="../">Accueil</a></li>
               <li><a href="{{ url('/machineACafe')}}">Machine à Café</a></li>
               <li><a href="{{ route('listeBoissons')}}">Boissons</a></li>
@@ -42,14 +42,15 @@
                             {{ csrf_field() }}
                         </form>
                     </li>
-                    {{-- <li><a href="{{ route('register') }}"><span class="glyphicon glyphicon-user"></span> Nouveau compte</a></li> --}}
+                    <li><a href="{{ route('register') }}"><span class="glyphicon glyphicon-user"></span> Nouveau compte</a></li>
                 </ul>
               </li>
           @else
             <li class="active"><a href="../">Accueil</a></li>
             <li><a href="{{ url('/machineACafe')}}">Machine à Café</a></li>
-            <li><a href="{{ route('register') }}"><span class="glyphicon glyphicon-user"></span> Ajouter un compte</a></li>
+            {{-- <li><a href="{{ route('register') }}"><span class="glyphicon glyphicon-user"></span> Ajouter un compte</a></li> --}}
             <li><a href="{{ route('login') }}"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
+          @endauth
           @endif
         </ul>
       </div>
