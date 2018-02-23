@@ -24,6 +24,12 @@
       <div>
         <img id="fente" src="../img/Fente_Monnayeur.png">
         <img type="submit" id="btnPay" src="../img/pay_off.png">
+      {{--   @if($prepare) --}}
+          <script type="text/javascript">
+          $('#btnpay').displayDrink().setTimeout(3000);
+               </script>
+       {{--    @endif --}}
+
         <a href="{{ route('MachineACafe')}}"><img id="btnCancel" src="../img/cancel_off.png"></a>
         <img id="btnMaintenance" src="../img/Maintenance_off.png">
         <img id="renduMonnaie" src="../img/Rendu_monnaie.png">
