@@ -1,12 +1,12 @@
 @extends('template.template')
 
 @section('content')
+
 <div id="machine" class="container">
   <form id="formulaire" action="{{route('ajoutVente')}}" method="post">
   {{ csrf_field() }}
     <div id="ecran">
       <div id="afficheur"></div>
-
         <!-- Selection de la boisson -->                 
         <img id="btnCafe" class="boisson" src="../img/btn_espresso_0.png">
         <img id="btnChocolat" class="boisson" src="../img/btn_chocolat_0.png">
@@ -31,7 +31,7 @@
        {{--    @endif --}}
 
         <a href="{{ route('MachineACafe')}}"><img id="btnCancel" src="../img/cancel_off.png"></a>
-        <img id="btnMaintenance" src="../img/Maintenance_off.png">
+        <a href="{{ route('listeVentes')}}"><img id="btnMaintenance" src="../img/Maintenance_off.png"></a>
         <img id="renduMonnaie" src="../img/Rendu_monnaie.png">
       </div>  
     

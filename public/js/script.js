@@ -1,4 +1,19 @@
-
+// $(document).ready(function() {
+//     $(".rocket").offset({top: 5, left: -200});
+//     $(".rocket").show(5000, function () {
+//         $(".rocket").hide();
+//     });
+//
+//     setTimeout(function () {
+//         $(".rocket").show();
+//         $('.rocket').animate({left: '+=2000px'}, 2000);
+//     }, 5000);
+//     setTimeout(function () {
+//         $(".rocket").show();
+//         $('.rocket').animate({left: '-=2000px'}, 4000);
+//     }, 10000);
+//     $('.rocket').finish();
+// });
 /*Déclaration des variables*/
 let COMPTEUR = 0;
 let NBSUCRES = 0;
@@ -232,7 +247,6 @@ function buy(nb5ct, nb10ct, nb20ct, nb50ct, nb1e,nb2e, price){
 function displayDrink(){
     $('#gobeletFond').addClass('gobeletBack');
     $('#gobeletFace').addClass('gobeletFront');
-    
 }
 
 function displayTouillette(){
@@ -376,6 +390,11 @@ $(document).ready(function(){
         
         
     });
+
+    function timer(){
+        document.getElementById("formulaire").submit();
+      }
+      
     
     $('#btnPay').click(function(){
         let drinkPrice = 0.5;
@@ -393,13 +412,12 @@ $(document).ready(function(){
             }
         
             displayBoisson(SELECTED);
-            document.getElementById("formulaire").submit();
+            setTimeout(timer, 3000);
+            // document.getElementById("formulaire").submit();
        
         } else {
             affiche('crédit insuffisant ou pas select : crédit actuel ' + COMPTEUR + '€');
         }
-        
-        
     });
     
     $('#btnCancel').click(function(){

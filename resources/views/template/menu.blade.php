@@ -1,5 +1,6 @@
-<nav class="navbar navbar-inverse navbar-static-top">
-    <div class="container-fluid">  
+<nav  class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        {{--<img hidden class="rocket" src="http://rs301.pbsrc.com/albums/nn64/lucsonic/Sonic/Sonicrunadvance-sonicxpress.gif~c200" width="50em" height="50em">--}}
       <div class="navbar-header">
         <!-- Collapsed Hamburger -->
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse" aria-expanded="false">
