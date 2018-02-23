@@ -140,7 +140,7 @@
 
         // Route pour lister les ventes
 
-        Route::get('/Liste_ventes','VenteController@index')->name('listeVentes')->middleware('auth');
+        Route::get('/Liste_ventes','VenteController@triVentesCroissant')->name('listeVentes')->middleware('auth');
 
         // Routes pour les tris du tableau des ventes
 
